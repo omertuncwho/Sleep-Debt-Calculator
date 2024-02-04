@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleep Debt Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -12,18 +16,29 @@
 
     <h2>Sleep Debt Calculator</h2>
 
-    <label for="recommended">Recommended Sleep Hours:</label>
-    <input type="number" name="recommended" id="recommended" placeholder="Recommended sleep hours per night.." min="0" required> <br>
+    <div class="container">
+        <div class="sub-container">
 
-    <label for="actual">Actual Sleep Hours:</label>
-    <input type="number" name="actual" id="actual" placeholder="Actual sleep hours last night.." min="0" required> <br>
+            <label for="recommended">Recommended Sleep Hours:</label>
+            <input type="number" name="recommended" id="recommended" placeholder="Recommended sleep hours per night.."
+                min="0" required> <br>
 
-    <input type="text" id="result" readonly>
+            <label for="actual">Actual Sleep Hours:</label>
+            <input type="number" name="actual" id="actual" placeholder="Actual sleep hours last night.." min="0"
+                required> <br>
 
-    <input type="button" id="calculate" value="Calculate">
+            <div class="button-container">
+                <button id="reset" onclick="resetCalculator()">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </button>
+                <button id="calculate" onclick="debtCalculator()">Calculate</button>
+            </div>
+
+            <input type="text" id="result" readonly disabled>
+        </div>
+    </div>
 
     <script src="main.js"></script>
-
 </body>
 
 </html>

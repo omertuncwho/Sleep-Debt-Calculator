@@ -1,0 +1,42 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(to left, #FFFFFF, #FFEFBA);
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-container {
+    align-items: flex-start;
+    text-align: end;
+}
+
+#calculate {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 185px;
+    height: 40px;
+}
+
+#result {
+    width: 390px;
+    height: 20px;
+}
+
+#actual,
+#recommended {
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#reset {
+    height: 40px;
+}
